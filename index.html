@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#00617f">
+        <title>Invisible scrollbar</title>
+        <style>
+            .example {
+                background-color: #00617f;
+                color: white;
+                width: 250px;
+                height: 100px;
+                border: 1px solid black;
+                overflow-y: scroll; /* Add the ability to scroll */
+            }
+
+            /* Chrome, Safari and Opera */
+            .example::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Firefox, Edge, and IE*/
+            .example {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Hide scrollbar but keep functionality</h2>
+        <p>Try to scroll inside the div below:</p>
+        <div class="example">Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+            Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+            Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+            Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+            Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+            Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+            Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling.. Some text to enable scrolling..
+        </div>
+</body>
+</html>
